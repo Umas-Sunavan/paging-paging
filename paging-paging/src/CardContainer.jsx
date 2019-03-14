@@ -40,8 +40,9 @@ class CardContainer extends Component {
       containerClass.stablizeScroll(event)
     })
     window.addEventListener('touchmove',function(event) {
+      event.preventDefault()
       containerClass.stablizeScreenTouch(event)
-    })
+    }, {passive: false})
   }
 
   stablizeScroll = (event) => {
