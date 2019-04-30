@@ -1,0 +1,19 @@
+.light-btn{
+
+}
+
+.heavy-btn{
+    background-color: #1b3e49;
+}
+
+.btn{
+    float: left;
+    padding: 2vh;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 500ms cubic-bezier(.11,1.03,.74,.88) 0s;
+}
+
+.btn:hover{
+    box-shadow: 0px 0px 10px #00000033;
+}

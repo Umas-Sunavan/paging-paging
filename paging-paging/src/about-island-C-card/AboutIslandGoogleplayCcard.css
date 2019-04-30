@@ -1,0 +1,219 @@
+/* -------------------------------------------------------------------------------------------- test */
+
+#background {
+  height: inherit;
+  background-color: #d0d0d0;
+}
+
+/* -------------------------------------------------------------------------------------------- CCard Content */
+
+.a-card-content-prototype1 {
+  width: 30%;
+}
+
+.a-card-content-prototype2 {
+  width: 70%;
+}
+
+/* -------------------------------------------------------------------------------------------- landing page (left part) */
+
+/* -------------------------------------------------------------------------------------------- landing page (right part) */
+
+.about-ialand-googleplay-right-part {
+  width: 100%;
+  height: 90vh;
+  float: left;
+  background-color: #fdfdfd;
+  padding: 0vh 0% 0vh 0%;
+}
+
+.about-ialand-googleplay-right-part>.onepage-pagination-group {
+  z-index: 1;
+  position: absolute;
+  width: auto;
+}
+
+.about-ialand-googleplay-right-part .showcase-container-mobile-phone {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.about-ialand-googleplay-right-part .showcase-container-pc {
+  display: flex;
+  width: calc(100% - 30px);
+  justify-content: flex-end;
+  flex-direction: row;
+  height: 87vh;
+  align-items: flex-end;
+  margin: 0px 0px 3vh 0px;
+}
+
+.about-ialand-googleplay-right-part .showcase-container-large-pc {
+  display: flex;
+  width: calc(100% - 30px);
+  justify-content: flex-end;
+  flex-direction: row;
+  height: 87vh;
+  align-items: flex-end;
+  margin: 0px 0px 3vh 0px;
+}
+
+
+/* ----------------------------------- phone showcase (right part) */
+
+#about-ialand-phonedisplay-container .btn {    
+  text-align: end;
+  position: relative;
+  bottom: -2vh;
+}
+
+.showcase-container-pc .phone-container {    
+  height: 601.5px;
+  width: 314px;
+  position: relative;
+  display: block;
+}
+
+.showcase-container-large-pc .phone-container {  
+  height: 907.5px;
+  width: 474px;
+  position: relative;
+  display: block
+}
+
+.showcase-container-mobile-phone .phone-container {  
+  height: 75vh;
+  width: 90%;
+  position: relative;
+  display: block;
+  margin: 0vh 5% 3vh 5%;
+}
+
+.showcase-container-pc #phone-background {  
+  height: 601.5px;
+  bottom: 0px;
+  width: auto;
+  display: inline-block;
+  position: absolute;
+}
+
+.showcase-container-large-pc #phone-background {  
+  height: 907.5px;
+  bottom: 0px;
+  width: auto;
+  display: inline-block;
+  position: absolute;
+}
+
+.showcase-container-mobile-phone #phone-background {  
+  height: 359.5px;
+  bottom: 10px;
+  right: 27px;
+  width: auto;
+  display: inline-block;
+  position: absolute;
+}
+
+.showcase-container-pc #ai-showcase-screen { 
+  overflow: hidden;
+  position: absolute;
+  right: 16.5px;
+  bottom: 65px;
+  border-radius: 9px;
+  z-index: 1;
+}
+
+.showcase-container-large-pc #ai-showcase-screen { 
+  overflow: hidden;
+  position: absolute;
+  right: 26.5px;
+  bottom:107px;
+  border-radius: 9px;
+  z-index: 1;
+}
+
+.showcase-container-mobile-phone #ai-showcase-screen {  
+  overflow: hidden;
+  position: absolute;
+  right: 36.5px;
+  bottom:49px;
+  border-radius: 9px;
+  z-index: 1;
+}
+
+#ai-showcase-screen #screen {
+  transform: translate(0px, -9px);
+}
+
+#app-category {
+  mix-blend-mode: darken;
+}
+
+/* -------------------------------------------------------------------------- Media Screen < 480 ( Mobile Screen Type ) */
+
+@media only screen and (max-width: 480px) {
+  .a-card-contentprototype-left-part {
+    /* width: 100%;
+    padding: 0vh 10% 3vh 10%; */
+    width: calc(94% - 40px);
+    padding: 0vh calc(3% + 20px) 20px calc(3% + 20px);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .about-ialand-exhibition-right-part {
+    width: 100%;
+  }
+
+  .a-card-content-prototype1 {
+    width: 100%;
+  }
+
+  .a-card-content-prototype2 {
+    width: 100%;
+  }
+
+  .about-ialand-exhibition-right-part>div {
+    /* width: 91%; */
+    width: 100%;
+  }
+
+  .content-feature-container {
+    width: 100%;
+    padding: 0px 0% 20px 0%;
+  }
+
+  .content-feature-container span {
+    margin-bottom: 5px;
+  }
+
+  .content-feature-container p.cn-text-sm {
+    font-size: 9pt;
+  }
+
+  .content-feature-container p.en-text-sm {
+    font-size: 9pt;
+  }
+
+}
+
+@media only screen and (max-height: 580px) {
+
+  .content-feature-container .content-feature-text span {
+    display: none;
+  }
+
+  .content-feature-container .content-feature-text span:nth-of-type(1) {
+    display: block;
+  }
+
+  .a-card-coveroprototype-left-part>div .cover-feature-container ul li span a {
+    display: block;
+  }
+
+  .content-feature-container a {
+    display: block;
+  }
+}

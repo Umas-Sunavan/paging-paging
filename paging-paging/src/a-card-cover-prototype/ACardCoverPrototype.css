@@ -1,0 +1,237 @@
+/* -------------------------------------------------------------------------------------------- test */
+
+#background {
+  height: inherit;
+  background-color: #d0d0d0;
+}
+/* -------------------------------------------------------------------------------------------- landing page (left part) */
+
+
+.a-card-cover-prototype1 {
+  width: 80%;
+}
+
+.a-card-cover-prototype2 {
+  width: 20%;
+}
+
+/* -------------------------------------------------------------------------------------------- CCard Content */
+
+.a-card-coveroprototype-left-part {
+  width: calc(97% - 95px);
+  /* width: 100%; */
+  height: 84vh;
+  float: left;
+  background-color: #f3f3f3;
+  padding: 3vh 3% 3vh 95px;
+  flex-direction: column;
+  display: flex;
+  float: left;
+}
+
+.about-island-logo {
+  margin: 20vh 20% 0vh 20%;
+  max-height: 300px;
+  flex-grow: 15;
+}
+
+.a-card-coveroprototype-left-part>div {
+  display: flex;
+  flex-grow: 1;
+}
+
+.a-card-coveroprototype-left-part>div .cover-feature-container {
+  width: 80%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.a-card-coveroprototype-left-part>div .cover-feature-container ul {
+  padding: 0px;
+  margin-left: 36px;
+  margin-bottom: 0px;
+}
+
+
+.cn-ul .feature-list-text {
+  list-style: trad-chinese-formal;
+}
+
+.en-ul .feature-list-text {
+  padding-left: 15px;
+  position: relative;
+  list-style-type: square;
+  left: -15px;
+  word-spacing: 0.8pt;
+  letter-spacing: -0.1pt;
+}
+
+.project-meta {
+  width: 20%;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.a-card-coveroprototype-left-part>div.detailed-teature-container {
+  display: none;
+  opacity: 0;
+  transition: opacity 1200ms cubic-bezier(0.77, 0, 0.175, 1) 0s;
+  position: absolute;
+  background-color: #0c1628bb;
+  flex-direction: column;
+  height: 80vh;
+  padding: 10vh 10% 0vh 10%;
+  width: 80%;
+  left: 0px;
+  top: 0px;
+  left: 0px;
+}
+
+.a-card-coveroprototype-left-part>div.detailed-feature-container-reveal {
+  display: flex;
+}
+
+.a-card-coveroprototype-left-part .detailed-teature-container ul li {
+  color: #f3f3f3;
+}
+
+.a-card-coveroprototype-left-part .detailed-teature-container p .detailed-teature-cancel {
+  color: #f3f3f3;
+  display: block;
+  float: left;
+}
+
+.a-card-coveroprototype-left-part .detailed-teature-container p a {
+  position: absolute;
+  bottom: 3vh;
+  font-size: 12pt !important;
+}
+
+.a-card-coveroprototype-left-part .detailed-teature-container li.en-text-md {
+  font-size: 12pt !important;
+}
+
+.a-card-coveroprototype-left-part .detailed-teature-container li.cn-text-sm {
+  font-size: 12pt !important;
+}
+
+.a-card-coveroprototype-left-part>div .cover-feature-container ul li span a {
+  display: none;
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+/* -------------------------------------------------------------------------------------------- landing page (right part) */
+
+
+.a-card-coveroprototype-right-part {
+  width: 100%;
+  height: 84vh;
+  float: left;
+  background-color: #fbfbfb;
+  padding: 3vh 0% 3vh 0%;
+}
+
+.a-card-coveroprototype-right-part>div {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+
+}
+
+.a-card-coveroprototype-right-part .b-card-menu-ul {
+  margin: 0vh 12% 0vh 12%;
+  padding: 0px;
+}
+
+.a-card-coveroprototype-right-part .project-meta {
+  display: none;
+}
+
+
+/* -------------------------------------------------------------------------- Media Screen <768 */
+
+@media only screen and (max-width: 768px) {
+
+  .a-card-coveroprototype-left-part {
+    width: 88%;
+    height: 84vh;
+    float: left;
+    background-color: #f3f3f3;
+    padding: 3vh 3% 13vh 9%;
+  }
+
+
+  .a-card-coveroprototype-right-part {
+    height: 84vh;
+    float: left;
+    background-color: #fbfbfb;
+    padding: 3vh 0% 13vh 9%;
+  }
+
+}
+
+/* -------------------------------------------------------------------------- Media Screen < 480 ( Mobile Screen Type ) */
+
+@media only screen and (max-width: 480px) {
+
+
+  .a-card-cover-prototype1 {
+    width: 100%;
+  }
+
+  .a-card-cover-prototype2 {
+    width: 100%;
+  }
+
+  .a-card-coveroprototype-left-part .project-meta {
+    display: none;
+  }
+
+  .a-card-coveroprototype-right-part {
+    width: 100%;
+  }
+
+  .a-card-coveroprototype-right-part .project-meta {
+    display: block;
+    position: absolute;
+    right: 9%;
+    bottom: 20px;
+  }
+
+  .a-card-coveroprototype-right-part>div {
+    width: 91%;
+
+  }
+
+  .about-island-logo {
+    margin: 5vh 20% 0vh 20%;
+    max-height: 300px;
+    flex-grow: 15;
+  }
+
+}
+
+@media only screen and (max-height: 580px) {
+
+  .about-island-logo {
+    margin: 0vh 20% 0vh 20%;
+  }
+
+  .a-card-coveroprototype-left-part>div .cover-feature-container ul li {
+    display: none;
+  }
+
+  .a-card-coveroprototype-left-part>div .cover-feature-container ul li:nth-of-type(1) {
+    display: block;
+  }
+
+  .a-card-coveroprototype-left-part>div .cover-feature-container ul li span a {
+    display: block;
+  }
+}

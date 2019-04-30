@@ -9,7 +9,6 @@ const _convertCardList = (rawCardDataList) => {
     mobileCardDataList.push({ACardAttr:listChild.ACardAttr,ACardChild:[],BCardContainerAttr:listChild.BCardContainerAttr})
     let mobileACardChildren = _createBCard(listChild.ACardChild,aCardIndex)
     mobileCardDataList[aCardIndex].ACardChild = mobileACardChildren
-    console.log(mobileCardDataList)
     return true
   })
 

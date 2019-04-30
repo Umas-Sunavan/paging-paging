@@ -1,0 +1,96 @@
+.st0{display:none;}
+.st0{clip-path:url(#SVGID_2_);}
+.st1{fill:#E8E8E8;}
+.st2{fill:#FFFFFF;}
+.st3{fill:#CAEAB6;}
+.st4{fill:#E6E6E6;}
+.st5{fill:#36405E;}
+.st6{fill:#FAF4E4;}
+.st7{fill:#F2E9C1;}
+.st8{fill:none;}
+.st9{fill:#9FA4B2;}
+.st10{fill:#30304E;}
+.st11{fill:#ECA75D;}
+.st12{fill:#B3D9FB;}
+.st13{clip-path:url(#SVGID_4_);}
+.st14{fill:#A4C6D2;}
+.st15{fill:#FFFFFF;stroke:#36405E;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+.st16{fill:#FF7884;}
+.st17{clip-path:url(#SVGID_6_);}
+.st18{clip-path:url(#SVGID_10_);}
+.st19{clip-path:url(#SVGID_14_);}
+.st20{filter:url(#Adobe_OpacityMaskFilter);}
+.st21{fill:url(#SVGID_16_);}
+.st22{mask:url(#SVGID_15_);}
+.st23{clip-path:url(#SVGID_18_);}
+.st24{fill:#FFEEF4;}
+.st25{clip-path:url(#SVGID_20_);}
+.st26{display:none;}
+.st27{display:inline;}
+.st28{opacity:0.28;}
+.st29{fill:#6295D2;}
+.st30{fill:#E87B99;}
+	.st0-bg{fill:none;}
+	.st1-bg{fill:#3A4466;}
+	.st2-bg{fill:#36405E;}
+	.st3-bg{fill:url(#SVGID_1_);}
+	.st6-book{fill:#E6E6E6;}
+	.st7-book{fill:#36405E;}
+	.st15-book{fill:#A4C6D2;}
+	.st17-book{fill:#FF7884;}
+	.st29-book{fill:#6295D2;}
+  .st30-book{fill:#E87B99;}
+  #SVGID_1_ {
+    overflow:visible;
+  }
+  #SVGID_3_ {
+    overflow:visible;
+  }
+  #SVGID_5_ {
+    overflow:visible;
+  }
+  #SVGID_7_ {
+    overflow:visible;
+  }
+  #location-icon{
+    overflow:visible;
+  }
+	.book{
+	transition: transform 1200ms cubic-bezier(0.77, 0, 0.175, 1) 0s;
+	animation: floating 3s 1s cubic-bezier(.65, .05, .36, 1) infinite both;
+	}
+	.book:hover{
+		cursor: pointer;
+		transition: transform 300ms cubic-bezier(0.77, 0, 0.175, 1) 0s;
+		animation: shaking 0.3s cubic-bezier(.65, .05, .36, 1) infinite both;
+	}
+	.book:active{
+		cursor: alias; 
+		transition: transform 300ms cubic-bezier(0.77, 0, 0.175, 1) 0s;
+		animation: rorating 5s cubic-bezier(.65, .05, .36, 1) infinite both;
+	}
+	.shadow{
+	opacity:0.28;
+	transition: transform 1200ms cubic-bezier(0.77, 0, 0.175, 1) 0s;
+	animation: shadow-changing 3s 1s cubic-bezier(.65, .05, .36, 1) infinite both;
+	}
+	@keyframes rorating {
+        0% {transform: rotate(0deg);}
+				50% {transform: rotate(-360deg);}
+        100% {transform: rotate(0deg);}
+      }
+	@keyframes shaking {
+				0% {transform: translate(0px, 0px);}
+				50% {transform: translate(0px, -10px);}
+				100% {transform: translate(0px, 0px);}
+			}
+	@keyframes shadow-changing {
+				0% {opacity: 0.28}
+				50% {opacity: 0.1}
+				100% {opacity: 0.28}
+			}
+	@keyframes floating {
+        0% {transform: translate(0px, 0px);}
+				50% {transform: translate(0px, -10px);}
+        100% {transform: translate(0px, 0px);}
+      }

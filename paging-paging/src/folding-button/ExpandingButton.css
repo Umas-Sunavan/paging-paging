@@ -1,0 +1,245 @@
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1vh 0% 1vh 0%;
+  transition: 300ms cubic-bezier(1,1,1,.01) 0s, opacity 300ms cubic-bezier(.65,0,1,.87) 0s;
+  text-decoration: none;
+  position: relative;
+  opacity: 1;
+  bottom: 0;
+  border-radius: 8px;
+}
+
+.item-folding {
+  z-index: 0;
+  opacity: 1;
+  transition: 300ms cubic-bezier(1,.01,1,1) 0s, opacity 300ms cubic-bezier(1,.01,1,1) 0.6s;
+  
+}
+
+.item-hiding {
+  opacity: 0;
+}
+
+.item-expending {
+  background-color: #fbfbfb;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  padding: 2.8vh 0% 2.8vh 0%;
+  opacity: 1;
+}
+
+.item .column-main .en-title {
+  font-size: 14pt;
+}
+
+.item .column-main .cn-text-lg {
+  font-size: 12pt;
+}
+
+.simple-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.item:hover {
+  box-shadow: 0px 0px 15px -5px #00000033;
+  padding: 1.8vh 0% 1.8vh 0%;
+  transition: 300ms cubic-bezier(.53, 0, .3, .99) 0s,
+}
+
+.item-expending:hover {
+  box-shadow: none;
+  padding: 1.8vh 0% 1.8vh 0%;
+  cursor: auto;
+}
+
+/*------------ Extensive Area */
+
+.extensive-section {
+  overflow: hidden;
+  transition: 500ms cubic-bezier(.53, 0, .3, .99) 0s;
+  height: auto;
+}
+
+.extensive-section-expanding {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+
+.column-main {
+  text-align: end;
+  padding: 0vh 7% 0vh 0%;
+  width: 90%;
+}
+
+.column-minor {
+  text-align: start;
+  width: 16%;
+  padding: 0vh 0% 0vh 0%;
+}
+.item .simple-section p {
+  transition: 300ms cubic-bezier(.53, 0, .3, .99) 0s;
+}
+
+.item .in {
+  transition: 300ms cubic-bezier(.53, 0, .3, .99);
+  -webkit-transition-delay: 0.3s; /* Safari */
+  transition-delay: 0.3s;
+}
+
+.item .school [class|=en] { 
+  transition: 300ms cubic-bezier(.53, 0, .3, .99);
+  -webkit-transition-delay: 0.3s; /* Safari */
+  transition-delay: 0.3s;
+}
+
+.item .course [class|=en] { 
+  transition: 300ms cubic-bezier(.53, 0, .3, .99);
+  -webkit-transition-delay: 0.3s; /* Safari */
+  transition-delay: 0.3s;
+}
+
+.item .gpa [class|=en] { 
+  transition: 300ms cubic-bezier(.53, 0, .3, .99);
+  -webkit-transition-delay: 0.3s; /* Safari */
+  transition-delay: 0.3s;
+}
+
+.item .school [class|=cn] { 
+  
+  transition: 300ms cubic-bezier(.53, 0, .3, .99);
+  -webkit-transition-delay: 0.6s; /* Safari */
+  transition-delay: 0.6s;
+}
+
+.item .course [class|=cn] { 
+  transition: 300ms cubic-bezier(.53, 0, .3, .99);
+  transition-delay: 0.6s;
+  -webkit-transition-delay: 0.6s; /* Safari */
+}
+
+.item .gpa [class|=cn] { 
+  transition: 300ms cubic-bezier(.53, 0, .3, .99);
+  transition-delay: 0.6s;
+  -webkit-transition-delay: 0.6s; /* Safari */
+}
+
+.item div {
+  transition: 300ms cubic-bezier(.53, 0, .3, .99);
+}
+
+/*------------ Extensive Area (Extensive Hidden) */
+
+.item-folding .extensive-section p {
+  font-size: 0pt !important;
+  margin: 0px;
+  padding: 0px;
+}
+
+.item-folding .extensive-section .course p {
+  font-size: 0pt !important;
+  margin: 0px;
+  padding: 0px;
+}
+
+.item-folding .extensive-section hr {
+  margin: 0px;
+  padding: 0px;
+}
+
+.item-hiding .extensive-section p {
+  font-size: 0pt !important;
+  margin: 0px;
+  padding: 0px;
+}
+
+.item-hiding .extensive-section hr {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*------------ Seperator */
+
+.in {
+  float: right;
+  padding: 3vh 23% 0vh 0%;
+  font-style: italic;
+}
+
+.extensive-section .hr-sm {
+  opacity: 0;
+}
+
+.column-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+
+.school .column-minor .text-secondary {
+  padding: 7pt 0% 0% 0% !important;
+}
+
+.column-main {
+  float: right;
+  text-align: right;
+}
+
+/* -------------------------------------- Item Expanded Style */
+
+/* ------------------- column-main */
+
+
+.item-expending .column-main {
+  padding: 0vh 6% 0vh 0%;
+  width: 70%;
+}
+
+.item-expending .column-main p {
+  padding: 0vh 0% 0vh 2%;
+}
+
+.item-expending .column-main .en-title {
+  font-size: 20pt;
+}
+
+.item-expending .column-main .cn-text-lg {
+  font-size: 16pt;
+}
+
+/* ------------------- column-minor */
+
+.item-expending .column-minor {
+  text-align: start;
+  width: 17%;
+  padding: 0vh 0% 0vh 0%;
+}
+
+.item-expending .column-minor p {
+  padding: 0vh 20% 0vh 0%;
+}
+
+.item-expending .column-minor .en-text-md {
+  font-size: 14pt;
+}
+
+.item-expending .column-minor .cn-text-sm {
+  font-size: 12pt;
+}
+
+@media only screen and (max-width: 480px) {
+
+  .extensive-section-expanding {
+    height: 53vh;
+  }
+}

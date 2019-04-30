@@ -1,0 +1,332 @@
+
+/* -------------------------------------------------------------------------------------------- about me (left part) */
+#b-card-0-in-a-card-0 {
+  height: 100vh !important;
+}
+
+.about-me-left-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 70%;
+  height: 94vh;
+  float: left;
+  background-color: #fbfbfb;
+  padding: 3vh 10% 3vh 20%;
+}
+
+#self-intro-section {
+  flex-grow: 1;
+}
+
+#name-title {
+  float: left;
+  margin: 0px;
+}
+
+.about-me-left-part .btn {
+  float: right;
+  margin: -4px 0px 0px 0px;
+}
+
+.brif-biography {
+  float: left;
+}
+
+#click-hint-container {
+  flex-grow: 1;
+}
+
+
+.hr-sm {
+  margin: 1vh 0% 1vh 0%;
+  width: 38%;
+}
+
+
+/* --------------------------------------------- skill area section (left part) */
+
+#skill-area {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 5;
+  align-items: flex-start;
+}
+
+.skill-column {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  align-items: start;
+  justify-content: center;
+}
+
+.skill-column:nth-of-type(1) {
+  position: relative;
+  z-index: 3;
+}
+
+.skill-column:nth-of-type(2) {
+  position: relative;
+  z-index: 2;
+}
+
+.skill-column:nth-of-type(3) {
+  position: relative;
+  z-index: 1;
+}
+
+
+/* --------------------------------------------------------------------------------------------  about me (right part) */
+
+
+.about-me-right-part {
+  width: 95%;
+  height: 94vh;
+  float: left;
+  background-color: #fbfbfb;
+  padding: 6vh 5% 3vh 0%;
+  transition: 1200ms cubic-bezier(.53,0,.3,.99) 0s;
+}
+
+#personal-bg-container {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  justify-content: space-between;
+}
+
+#education-section,
+#experience-section {
+  display: flex;
+  flex-direction: column;
+}
+
+#title-section {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 0vh 0% 0vh 0%;
+}
+
+#title-section .en-title {
+  text-align: end;
+  padding: 0vh 7% 0vh 0%;
+  width: 90%;
+  letter-spacing: 1.5pt;
+  line-height: 0.7;
+}
+
+#title-section .cn-text-lg {
+  text-align: start;
+  width: 16%;
+  padding: 0vh 0% 0vh 0%;
+}
+
+#hr {
+  margin: 1vh 6% 2vh 0%;
+  float: right;
+  align-self: flex-end;
+}
+
+.expandingbtn-bg-svg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 3;
+  opacity: 0.67;
+}
+
+.expandingbtn-bg-svg-show {
+  transition: 900ms cubic-bezier(.53,0,.3,.99) 0s;
+  transform: translate(-50%, -50%);
+  border-radius: 100%;
+  width: 450%;
+}
+
+.expandingbtn-bg-svg-hide {
+  transition: 300ms cubic-bezier(.53,0,.3,.99) 0.3s;
+  transform: translate(-50%, -50%);
+  border-radius: 100%;
+  width: 0;
+}
+
+.expandingbtn-bg-rect {
+  z-index: 3;
+}
+
+/* .sensor {
+  background-color: #00000099;
+  padding: 1.8vh 0% 1.8vh 0%;
+
+      position: fixed;
+    width: 47.8%;
+  border-radius: 3px;
+}
+
+
+.sensor:hover {
+  background-color: aquamarine;
+    padding: 1.8vh 0% 1.8vh 0%;
+    position: fixed;
+    width: 47.8%;
+    box-shadow: 0px 0px 15px -5px #00000033;
+  border-radius: 3px;
+}
+
+.measurer {
+  text-align: end;
+    margin: 0vh 0px 3vh 0vh;
+    font-family: 'Sorts Mill Goudy', serif;
+    font-size: 1.8em;
+}
+
+#sensor-container {
+  position: absolute;
+  top: 6vh;
+}
+
+.content-measurer1 {
+  color: #4F809D;
+  font-family: 'Noto Serif JP', sans-serif;
+  font-size: 12pt;
+  margin: 0px;
+  
+}
+
+.content-measurer2 {
+  color: #4F809D;
+  font-family: 'Sorts Mill Goudy', serif;
+  font-size: 14pt;
+  margin: 0px;
+} */
+
+
+.about-me-right-part .social-media-button-group {
+  float: left;
+  position: absolute;
+  margin-left: 5.5%;
+  width: 39%;
+  bottom: 3vh;
+}
+
+.about-me-right-part .social-media-button {
+  background-image: url(/images/fb-icon-unauthorized.svg);
+  height: 4vh;
+  width: 4vh;
+  float: left;
+  margin: 0px 3%;
+  clip-path: circle(50% at center);
+}
+
+.about-me-right-part #cover-page-year-stemp {
+  display: flex;
+  justify-content: flex-end;
+  height: 4vh;
+  align-items: flex-end;
+}
+
+/* -------------------------------------------------------------------------- Media Screen < 480 ( Mobile Screen Type ) */
+
+@media only screen and (max-width: 480px) {
+
+  .about-me-left-part {
+    padding: 1vh 10% 0vh 20%;
+    height: 90vh;
+  }
+
+  .about-me-right-part{
+    padding: 10vh 5% 3vh 0%;
+    height: 87vh;
+  }
+
+  #click-hint-container{ 
+    display: none;
+  }
+
+  #b-card-1-in-a-card-0 {
+    top: -5vh;
+    padding-bottom: 5vh;
+  }
+
+  #b-card-0-in-a-card-0 {
+    height: 95vh !important;
+  }
+
+  #author-area {
+    bottom: 0vh;
+  }
+
+  .about-me-right-part .social-media-button-group {
+    bottom: 0vh;
+  }
+  
+  /* -------------------------------------- Animation ( Mobile Screen ) */
+
+  .about-me-right-part-came {
+    transition: 1200ms cubic-bezier(.53,0,.3,.99) 0s;
+    padding: 4vh 5% 3vh 5%;
+    height: 93vh;
+    width: 90%;
+  }
+
+}
+
+/* -------------------------------------------------------------------------- Media Screen < 768 ( Mobile Screen Type ) */
+
+@media only screen and (max-height: 768px) {
+
+  #education-section .item {
+    display: none;
+  }#education-section .item:nth-of-type(1) {
+    display: flex;
+  }#education-section .item:nth-of-type(2) {
+    display: flex;
+  }#education-section .item:nth-of-type(3) {
+    display: flex;
+  }
+
+  #experience-section .item {
+    display: none;
+  }#experience-section .item:nth-of-type(1) {
+    display: flex;
+  }#experience-section .item:nth-of-type(2) {
+    display: flex;
+  }
+
+}
+
+/* -------------------------------------------------------------------------- Height < 580 ( Mobile Screen Type ) */
+
+@media only screen and (max-height: 580px) {
+
+  #education-section .item {
+    display: none;
+  }#education-section .item:nth-of-type(1) {
+    display: flex;
+  }#education-section .item:nth-of-type(2) {
+    display: none;
+  }#education-section .item:nth-of-type(3) {
+    display: none;
+  }
+
+  #experience-section .item {
+    display: none;
+  }#experience-section .item:nth-of-type(1) {
+    display: flex;
+  }#experience-section .item:nth-of-type(2) {
+    display: none;
+  }
+
+  .about-me-right-part .social-media-button-group {
+    bottom: 0vh;
+  }
+
+  #personal-bg-container {
+  justify-content: start;
+  }
+  
+}

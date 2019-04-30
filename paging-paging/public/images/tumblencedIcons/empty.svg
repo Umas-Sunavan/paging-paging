@@ -1,0 +1,17 @@
+<svg version="1.1" 
+	xmlns="http://www.w3.org/2000/svg" 
+	xmlns:xlink="http://www.w3.org/1999/xlink" 
+	xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" viewBox="-17 -17 192 192" enable-background="new 0 0 400 400" xml:space="preserve">
+	<defs>
+		<filter id="noise">
+			<feTurbulence type="fractalNoise" baseFrequency="0.15" result="noisy" />
+			<feDisplacementMap in="SourceGraphic" in2="noisy" scale="6" xChannelSelector="G" yChannelSelector="R"/>
+		</filter>
+		<rect id="SVGID_1_" y="0.1" width="192" height="192"/>
+	</defs>
+	<clipPath filter="url(#noise)" id="SVGID_2_">
+		<use xlink:href="#SVGID_1_" overflow="visible"/>
+	</clipPath>
+	<g clip-path="url(#SVGID_2_)">
+	</g>
+</svg>

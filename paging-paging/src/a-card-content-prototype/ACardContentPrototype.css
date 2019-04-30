@@ -1,0 +1,209 @@
+/* -------------------------------------------------------------------------------------------- test */
+
+#background {
+  height: inherit;
+  background-color: #d0d0d0;
+}
+
+/* -------------------------------------------------------------------------------------------- CCard Content */
+
+.a-card-content-prototype1 {
+  width: 30%;
+}
+
+.a-card-content-prototype2 {
+  width: 70%;
+}
+
+/* -------------------------------------------------------------------------------------------- landing page (left part) */
+
+.a-card-contentprototype-left-part {
+  width: calc(97% - 95px);
+  /* width: 100%; */
+  height: 87vh;
+  float: left;
+  background-color: #f3f3f3;
+  padding: 0vh 3% 3vh 95px;
+  flex-direction: column;
+  display: flex;
+  float: left;
+  justify-content: space-between;
+}
+
+.about-island-site-logo {
+  margin: 5.5vh 5% 2.5vh 5%;
+  max-height: 300px;
+}
+
+.content-feature-container {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0px 3% 3vh 3%;
+  position: absolute;
+  bottom: 10vh;
+  width: 16%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0px 30px 0vh 30px;
+  position: relative;
+  bottom: 20px;
+  width: calc(100% - 60px);
+}
+
+.detailed-feature-container {
+  display: none;
+  opacity: 0;
+  transition: opacity 1200ms cubic-bezier(0.77, 0, 0.175, 1) 0s;
+  position: absolute;
+  background-color: #0c1628bb;
+  flex-direction: column;
+  height: 80vh;
+  padding: 10vh 10% 0vh 10%;
+  width: 80%;
+  left: 0px;
+}
+
+.detailed-feature-container-reveal {
+  display: flex;
+}
+
+.detailed-feature-container-reveal p span {
+  color: #f3f3f3;
+}
+
+.detailed-feature-container-reveal p.en-text-sm span {
+  font-size: 9pt !important;
+}
+
+.detailed-feature-container-reveal p.cn-text-sm span {
+  font-size: 10pt !important;
+}
+
+.detailed-feature-container-reveal p a {
+  color: #f3f3f3;
+  font-size: 10pt !important;
+}
+
+.content-feature-container a {
+  display: none;
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+
+/* -------------------------------------------------------------------------------------------- landing page (right part) */
+
+.a-card-content-prototype-right-part {
+  width: 100%;
+  height: 84vh;
+  float: left;
+  background-color: #fbfbfb;
+  padding: 0vh 0% 0vh 0%;
+}
+
+.a-card-content-prototype-right-partt>div {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+
+}
+
+.a-card-content-prototype-right-part .b-card-menu-ul {
+  margin: 20px 0% 0vh 20px;
+  padding: 0px;
+  width: 20%;
+  position: absolute; 
+}
+
+.a-card-content-prototype-right-part .project-meta {
+  display: none;
+}
+
+
+/* -------------------------------------------------------------------------- Media Screen <768 */
+
+@media only screen and (max-width: 768px) {
+  .a-card-content-prototype-right-part {
+    height: 100vh;
+    float: left;
+    background-color: #fbfbfb;
+
+  }
+
+  .a-card-contentprototype-left-part {
+    padding: 0vh 0% 3vh 0%;
+    width: 100%;
+  }
+
+  
+}
+
+/* -------------------------------------------------------------------------- Media Screen < 480 ( Mobile Screen Type ) */
+
+@media only screen and (max-width: 480px) {
+  .a-card-contentprototype-left-part {
+    /* width: 100%;
+    padding: 0vh 10% 3vh 10%; */
+    width: calc(94% - 40px);
+    padding: 0vh calc(3% + 20px) 20px calc(3% + 20px);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .a-card-content-prototype-right-part {
+    width: 100%;
+  }
+
+  .a-card-content-prototype1 {
+    width: 100%;
+  }
+
+  .a-card-content-prototype2 {
+    width: 100%;
+  }
+
+  .a-card-content-prototype-right-part>div {
+    /* width: 91%; */
+    width: 100%;
+  }
+
+  .content-feature-container {
+    width: 100%;
+    padding: 0px 0% 20px 0%;
+  }
+
+  .content-feature-container span {
+    margin-bottom: 5px;
+  }
+  
+  .content-feature-container p.cn-text-sm {
+    font-size: 9pt;
+  }
+  
+  .content-feature-container p.en-text-sm {
+    font-size: 9pt;
+  }
+
+}
+
+@media only screen and (max-height: 580px) {
+
+  .content-feature-container .content-feature-text span {
+    display: none;
+  }
+
+  .content-feature-container .content-feature-text span:nth-of-type(1) {
+    display: block;
+  }
+
+  .a-card-coveroprototype-left-part>div .cover-feature-container ul li span a {
+    display: block;
+  }
+
+  .content-feature-container a {
+    display: block;
+  }
+}

@@ -1,0 +1,18 @@
+在SVG< animate>中begin="xxx.DOMNodeRemoved" 可以使用但xxx.DOMAttrModified卻沒辦法使用  (https://www.w3.org/TR/DOM-Level-2-Events/events.html) 
+「顯示更多」功能可以用透明漸層覆蓋背景並再畫一個白色底給文字顯示
+//封面頁中沒有向下的箭頭
+//封面頁中箭頭位置沒有橋好
+封面左上角要用細體
+封面頁中間的方形比較沒意義，要拿掉
+右下角細體
+右上按鈕要改成：聯絡我：Email、履歷：履歷PDF、舊版作品集：之前的作品集超連結
+右下的icon要加上: Github、CakeResume、Medium、LinkedID、CodePen
+AboutIsland換成colligraphy版本
+//往下滑的時候按鈕不要不見
+a card的背景灰色
+防止在小螢幕字體溢出
+左邊Acard menu icon字對齊
+c card menu改成focus:white, blurred: grey
+關於我的卡的履歷項目會溢出
+每個技能需要更多詳細資料
+關於我的卡的右下角要換成Github、CakeResume、Medium、LinkedID、CodePen

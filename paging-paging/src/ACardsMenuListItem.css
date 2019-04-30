@@ -1,0 +1,139 @@
+/* -------------------------------------------------------------------------- Menu */
+
+.a-card-menu-list {
+   position: fixed;
+   top: 50vh;
+   transform: translateY(-50%);
+   transition: transform 1200ms cubic-bezier(0.77, 0, 0.175, 1) 0s;
+   left: 0%;
+   /* width: 110px; */
+   width: fit-content;
+}
+
+.hide-left {
+   transform: translateX(-100%)
+}
+
+/* -------------------------------------------------------------------------- Menu list item */
+
+.menu-list-ul {
+   padding: 0px;
+   margin: 0px;
+   display: flex;
+   flex-direction: column;
+}
+
+.menu-item-container {
+   margin: 18px 0 0 0px;
+}
+
+.menu-item-container>p {
+   margin: 0px;
+   display: inline;
+}
+
+.menu-item-svg-container {
+   position: relative;
+   width: 30px;
+   height: 30px;
+   float: left;
+   transform: translate(-50%, calc(-45% + 31px));
+}
+
+.menu-item-svg-container a {
+   display: block;
+   transform: rotate(45deg);
+   position: absolute;
+   top: -1vh;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   width: 100%;
+   height: 100%;
+}
+
+.menu-item-svg-container a svg {
+   height: inherit;
+   width: inherit;
+}
+
+
+.menu-item-svg-container a div {
+   height: 100%;
+   width: 100%;
+}
+
+.menu-item-svg .container {
+   stroke-linejoin: round;
+   fill: none;
+   stroke: #2B6FB3;
+   stroke-width: 3px;
+   stroke-miterlimit: 10;
+}
+
+.menu-item-svg .liquid {
+   stroke-linejoin: round;
+   fill: #2B6FB3;
+   stroke: #2B6FB3;
+   stroke-width: 3px;
+   stroke-miterlimit: 10;
+}
+
+.menu-list-ul .menu-item-container .menu-item-text-cn,
+.menu-list-ul .menu-item-container .menu-item-text-en {
+   display: inline-block;
+   transform: scale(0.9) translate(-10px, 0px);
+   transition: transform 1200ms cubic-bezier(0.77, 0, 0.175, 1) 0s, -webkit-transform 1200ms cubic-bezier(0.77, 0, 0.175, 1) 0s, color 1200ms cubic-bezier(0.77, 0, 0.175, 1) 0s;
+   color: #d1d1d1;
+   text-decoration: none;
+}
+
+.menu-list-ul .menu-item-container>p>.focus {
+   transform: scale(1) translate(0px, 0px);
+   color: #4F809D;
+}
+
+/* -------------------------------------------------------------------------- Media Screen <768 */
+
+@media only screen and (max-width: 768px) {
+
+   .menu-list-ul .menu-item-container .menu-item-text-cn {
+      display: none;
+   }
+
+   .menu-list-ul .menu-item-container .menu-item-text-en {
+      display: none;
+   }
+
+   .menu-list-ul .menu-item-container>p>.focus {
+      transform: scale(1) translate(0px, 0px);
+      color: #4F809D;
+   }
+
+
+   .a-card-menu-list {
+      /* width: 20px; */
+   }
+
+}
+
+/* -------------------------------------------------------------------------- Media Screen < 480 */
+
+@media only screen and (max-width: 480px) {
+
+   .menu-list-ul .menu-item-container .menu-item-text-cn {
+      /* display: inline; */
+      /* position: relative;
+      left: 35px; */
+   }
+
+   .menu-list-ul .menu-item-container .menu-item-text-en {
+      /* display: inline; */
+   }
+
+
+   .a-card-menu-list {
+      /* width: 20px; */
+   }
+
+}

@@ -1,0 +1,22 @@
+.sensor:hover {
+  cursor: pointer;
+}
+
+.skill-bar {
+  left: -4.5%;
+    height: auto;
+    width: 130%;
+  position: relative;
+}
+
+.textDiv {
+  width: 0px;
+  height: 0px;
+    background-color: #d0f8d6;
+    /* width: 26px; */
+    /* height: 26px; */
+    position: absolute;
+    left: 100px;
+    border-radius: 30px;
+    transition: 500ms 
+}
